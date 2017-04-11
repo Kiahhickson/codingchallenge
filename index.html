@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiah Hickson PWC Coding Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<!-- Start of the form -->
+<div class="form-style">
+  <h1 class="heading-one">My Application Form</h1>
+
+  <!-- Use of method="get" instead of "post" is ok here as we are not dealing with sensitive info like p.word or cc details. -->
+  <form action="#" method="get" autocomplete="on">
+    <!-- I have given each component a div class of row to better space and style each section -->
+    <!-- Start of the name row -->
+    <div class="row">
+      <h3 class="heading-three">My name is</h3>
+      <input type="text" name="firstname" placeholder="Please enter your full name">
+    </div>
+    <!-- End of the name row -->
+    
+    <br>
+    <!-- Start of the button level selectors. I used the type checkbox and styled them to look like buttons -->
+    <div class="row">
+      <h3 class="heading-three">I find CSS</h3>
+
+        <div id="button-level">
+         <label>
+            <input type="checkbox" value="1"><span>Easy</span>
+         </label>
+        </div>
+
+        <div id="button-level">
+           <label>
+              <input type="checkbox" value="2"><span>Hard</span>
+           </label>
+        </div>
+
+        <div id="button-level">
+           <label>
+              <input type="checkbox" value="3"><span>Diabolical</span>
+           </label>
+        </div>
+    </div>
+  <!-- End of the button level selectors -->
+  <br>
+  <br>
+  <!-- Start of the dropdown selector -->
+    <div class="row">
+      <br>
+      <h3 class="heading-three">My favourite JavaScript library is: </h3>
+        <select name="libraries">
+        <option value="">Please select...</option>
+        <option value="angular">Angular.js</option>
+        <option value="react">React.js</option>
+        <option value="three">Three.js</option>
+        <option value="vue">Vue.js</option>
+        </select>
+    </div>
+  <!-- End of the dropdown selector -->
+  <br>
+<!-- Start of the checkbox switcher -->
+    <div class="row">
+        <label class="switch">
+          <input type="checkbox">
+          <div class="slider round"></div>
+        </label> I really want to work at PwC
+    </div>
+  <!-- End of the checkboc switcher -->
+  <br>
+  <!-- Start of the submit button -->
+    <div class="button-right">
+      <input type="submit" value="Submit">
+    </div>
+  <!-- End of the submit button -->
+  </form>
+  <!-- End of the form -->
+</div>
+  
+</body>
+</html>

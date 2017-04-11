@@ -1,0 +1,174 @@
+body {
+font-family: 'Roboto', sans-serif;
+padding: 40px;
+}
+/*Top level heading with grey gradient*/
+.heading-one {
+  background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-360deg, grey, lightgrey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-360deg, grey, lightgrey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-360deg, grey, lightgrey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-360deg, grey, lightgrey); /* Standard syntax */
+  padding: 10px;
+}
+/*The outside of the form - this is where the black border happens*/
+.form-style {
+  border: solid 2px black;
+  position: center;
+  padding-right: 20px;
+  padding-left: 20px
+}
+/*I gave my h3 tag a class for easy access to styling. I think this is probably unneccessary for such a simple project.*/
+.heading-three {
+  font-weight: bold;
+}
+/* I wrapped each component in a row within the form style */
+.row {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+/* This part styles the "My name is" section */
+input[type=text] {
+  width: 100%;
+  border-radius: 0;
+  height: 50px;
+  font-size: 18px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+/*This is accessing the label input within the button-level div*/
+div label input {
+  margin-right: 100px;
+}
+/* This accesses the button-level id*/
+#button-level {
+  margin-right: 25px;
+  margin-top: 0px;
+  background-color: #eb8c00;
+  border: 1px solid black;
+  overflow: auto;
+  float: left;
+  padding: 10px 35px; 
+  cursor: pointer;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+}
+
+#button-level:hover {
+  background: white;
+}
+
+#button-level label {
+  float: left;
+  width: 4.0em;
+}
+
+#button-level label span {
+  text-align: center;
+  padding: 3px 0px;
+  display: block;
+}
+
+#button-level label input {
+  position: absolute;
+  top: -20px;
+}
+
+#button-level input:checked + span {
+  background-color: #eb8c00;
+  color: white;
+}
+/*The select element refers to the "My favourite  Javascript Library"*/
+select {
+  width: 100%;
+  border-radius: 0;
+  height: 50px;
+  font-size: 18px;
+  color: #757575;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat right;
+}
+
+/* The code below refers to the toggle switch - This was coded with the help of a tutorial*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00cc00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00cc00;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*This is the styling for the red submit button*/
+input[type=submit] {
+  padding: 10px 35px; 
+  background: #ff0000;
+  color: white; 
+  border: 1px #d43f3a;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+
+}
+
+/*I created a div around the button and gave it a class of button-right to style the button to be on the RHS*/
+.button-right {
+  text-align: right;
+  padding-bottom: 20px;
+}
