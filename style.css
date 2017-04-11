@@ -14,7 +14,6 @@ padding: 40px;
 /*The outside of the form - this is where the black border happens*/
 .form-style {
   border: solid 2px black;
-  position: center;
   padding-right: 20px;
   padding-left: 20px
 }
@@ -89,6 +88,7 @@ select {
   color: #757575;
   padding-left: 10px;
   -webkit-appearance: none;
+  -moz-appearance: none;
   background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat right;
 }
 
